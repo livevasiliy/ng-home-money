@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/angular-firebase-ci-demo",
+    "public": "dist/ng-home-money",
     "rewrites": [
       {
         "source": "**",
