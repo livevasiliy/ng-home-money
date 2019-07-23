@@ -1,6 +1,12 @@
-# NgHomeMoney
+# NgHomeMoney - Практический проект из курс Angular 7 с Нуля до Профи от [WebFromMySelf](https://webformyself.com) на [Udemy](https://www.udemy.com/angularwfs/)
+
+Практика курса была записана на Angular 4, но мною была написана под все особенности последнее и данный момент версию [Angular](https://angular.io) 8 и [RxJS](https://rxjs-dev.firebaseapp.com/) 6.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+
+## Development server + Mock backend server by package [json-server](https://github.com/typicode/json-server)
+
+Run `npm start dev` for a dev server & start json-server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. Mock json-server is started on `http://localhost:3000`
 
 ## Development server
 
