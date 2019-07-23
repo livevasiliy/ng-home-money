@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "dist/angular-firebase-ci-demo",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
