@@ -1,6 +1,6 @@
 # NgHomeMoney - Практический проект из курс Angular 7 с Нуля до Профи от [WebFromMySelf](https://webformyself.com) на [Udemy](https://www.udemy.com/angularwfs/)
 
-Практика курса была записана на Angular 4, но мною была написана под все особенности последнее и данный момент версию [Angular](https://angular.io) 8 и [RxJS](https://rxjs-dev.firebaseapp.com/) 6.
+Практика курса была записана на Angular 4, но мною было написано под все особенности последнее и данный момент версию [Angular](https://angular.io) 8 и [RxJS](https://rxjs-dev.firebaseapp.com/) 6.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
