@@ -40,8 +40,8 @@ export class LoginComponent implements OnInit {
     private authService: AuthService,
     private router: Router,
     private route: ActivatedRoute
-  ) {
-  }
+  ) {}
+
 
   private showMessage(message: Message) {
     this.message = message;
@@ -52,14 +52,13 @@ export class LoginComponent implements OnInit {
 
   submitHandler() {
     const formData = this.form.value;
-
     this.userService.getUserByEmail(formData.email).subscribe((user: User) => {
       if (user) {
         if (user.password === formData.password) {
           this.message.text = '';
           window.localStorage.setItem('user', JSON.stringify(user));
           this.authService.login();
-          // this.router.navigate(['']);
+          this.router.navigate(['/system', 'bill']);
         } else {
           this.showMessage({type: 'danger', text: 'Не правильный логин или пароль'});
         }
@@ -68,6 +67,4 @@ export class LoginComponent implements OnInit {
       }
     });
   }
-
-
 }
