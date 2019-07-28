@@ -14,4 +14,8 @@ export class EventService extends BaseApi {
   addEvent(event: VPEventModel): Observable<VPEventModel> {
     return this.post('events', event);
   }
+
+  getEvents(): Observable<VPEventModel[]> {
+    return this.get('events');
+  }
 }

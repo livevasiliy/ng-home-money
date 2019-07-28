@@ -14,7 +14,7 @@
     }
   ],
   "bill": {
-    "value": 199900,
+    "value": 99000,
     "currency": "RUB"
   },
   "categories": [
@@ -29,29 +29,9 @@
       "id": 2
     },
     {
-      "id": 3,
       "name": "Машина",
-      "capacity": 7000
-    },
-    {
-      "name": "Test",
-      "capacity": 5522,
-      "id": 4
-    },
-    {
-      "name": "Новая",
-      "capacity": 1000000,
-      "id": 5
-    },
-    {
-      "name": "Развлечение",
-      "capacity": 10000,
-      "id": 6
-    },
-    {
-      "name": "Уход",
-      "capacity": 15000,
-      "id": 7
+      "capacity": 9000,
+      "id": 3
     }
   ],
   "events": [
@@ -97,19 +77,27 @@
     },
     {
       "type": "outcome",
-      "amount": 100,
-      "category": 5,
-      "date": "28.07.2019 20:36:31",
+      "amount": 3000,
+      "category": 3,
+      "date": "28.07.2019 23:44:35",
       "description": "Test",
       "id": 6
     },
     {
       "type": "income",
-      "amount": 100000,
-      "category": 1,
-      "date": "28.07.2019 20:45:02",
-      "description": "Test",
+      "amount": 1000,
+      "category": 3,
+      "date": "28.07.2019 23:44:56",
+      "description": "Test2",
       "id": 7
+    },
+    {
+      "type": "income",
+      "amount": 1000,
+      "category": 3,
+      "date": "28.07.2019 23:45:22",
+      "description": "test 2",
+      "id": 8
     }
   ]
 }
