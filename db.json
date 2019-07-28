@@ -14,7 +14,7 @@
     }
   ],
   "bill": {
-    "value": 100000,
+    "value": 199900,
     "currency": "RUB"
   },
   "categories": [
@@ -32,6 +32,26 @@
       "id": 3,
       "name": "Машина",
       "capacity": 7000
+    },
+    {
+      "name": "Test",
+      "capacity": 5522,
+      "id": 4
+    },
+    {
+      "name": "Новая",
+      "capacity": 1000000,
+      "id": 5
+    },
+    {
+      "name": "Развлечение",
+      "capacity": 10000,
+      "id": 6
+    },
+    {
+      "name": "Уход",
+      "capacity": 15000,
+      "id": 7
     }
   ],
   "events": [
@@ -74,6 +94,22 @@
       "date": "10.06.2017 14:01:58",
       "id": 5,
       "description": "Заправка + проход ТО"
+    },
+    {
+      "type": "outcome",
+      "amount": 100,
+      "category": 5,
+      "date": "28.07.2019 20:36:31",
+      "description": "Test",
+      "id": 6
+    },
+    {
+      "type": "income",
+      "amount": 100000,
+      "category": 1,
+      "date": "28.07.2019 20:45:02",
+      "description": "Test",
+      "id": 7
     }
   ]
 }

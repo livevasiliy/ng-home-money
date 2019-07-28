@@ -14,7 +14,6 @@ export class UsersService extends BaseApi {
 
   getUserByEmail(email: string) {
     return this.get(`users?email=${email}`).pipe(
-      map((data) => data),
       map((user: User[]) => user[0] ? user[0] : undefined));
   }
 
