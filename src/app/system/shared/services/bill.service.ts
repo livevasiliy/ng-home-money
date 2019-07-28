@@ -19,6 +19,6 @@ export class BillService extends BaseApi {
   }
 
   getCurrency(): Observable<any> {
-    return this.httpClient.get(`http://data.fixer.io/api/latest?access_key=963cd9d7e998c0094b9def747dd2cd85&symbols=USD,EUR,RUB`);
+    return this.httpClient.get(`http://data.fixer.io/api/latest?access_key=963cd9d7e998c0094b9def747dd2cd85&symbols=EUR,USD,RUB`);
   }
 }
