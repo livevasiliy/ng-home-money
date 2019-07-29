@@ -13,7 +13,7 @@
 </div>
 <section class="section">
   <div class="row text-center" *ngIf="!isLoaded">
-    Loading...
+    <vp-loader></vp-loader>
   </div>
   <div class="row" *ngIf="isLoaded">
     <vp-bill-card [bill]="bill" [currency]="currency"></vp-bill-card>

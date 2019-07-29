@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 import { UsersService } from '../../shared/services/users.service';
 import { AuthService } from '../../shared/services/auth.service';
 
 import { User } from '../../shared/models/user.model';
 import { Message } from '../../shared/models/message.model';
+import { fadeStateTrigger } from '../../shared/animations/fade.animations';
+
 
 @Component({
   selector: 'vp-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  animations: [fadeStateTrigger]
 })
 export class LoginComponent implements OnInit {
 
@@ -27,6 +31,11 @@ export class LoginComponent implements OnInit {
             type: 'success',
             text: 'Теперь вы можете зайти в систему'
           });
+        } else if (params.accessDenied) {
+          this.showMessage({
+            text: 'Для работы с системой вам нужно авторизоваться',
+            type: 'warning'
+          });
         }
       });
     this.form = new FormGroup({
@@ -39,8 +48,16 @@ export class LoginComponent implements OnInit {
     private userService: UsersService,
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute
-  ) {}
+    private route: ActivatedRoute,
+    private title: Title,
+    private meta: Meta
+  ) {
+    title.setTitle('Вход в систему');
+    meta.addTags([
+      { name: 'keywords', content: 'логин, вход, система'},
+      { name: 'description', content: 'Страница для входа в систему'}
+    ]);
+  }
 
 
   private showMessage(message: Message) {

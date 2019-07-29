@@ -1,4 +1,6 @@
-<div class="text-center" *ngIf="!isLoading">Loading...</div>
+<div class="text-center" *ngIf="!isLoading">
+  <vp-loader></vp-loader>
+</div>
 <div *ngIf="isLoading">
   <div class="title-block">
     <h3 class="title">

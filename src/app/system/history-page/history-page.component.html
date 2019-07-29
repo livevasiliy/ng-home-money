@@ -12,7 +12,9 @@
   </div>
 </div>
 
-<div *ngIf="!isLoading" class="text-center">Loading...</div>
+<div *ngIf="!isLoading" class="text-center">
+  <vp-loader></vp-loader>
+</div>
 <div *ngIf="isLoading">
   <vp-history-chart [data]="chartData"></vp-history-chart>
   <vp-history-events

@@ -17,9 +17,9 @@ export class PlanningPageComponent implements OnInit, OnDestroy {
 
   isLoading = false;
   sub1: Subscription;
-  private bill: Bill;
-  private categories: Category[];
-  private events: VPEventModel[];
+  bill: Bill;
+  categories: Category[];
+  events: VPEventModel[];
 
   constructor(private billService: BillService,
               private categoryService: CategoriesService,
