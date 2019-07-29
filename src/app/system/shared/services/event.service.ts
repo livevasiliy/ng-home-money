@@ -18,4 +18,8 @@ export class EventService extends BaseApi {
   getEvents(): Observable<VPEventModel[]> {
     return this.get('events');
   }
+
+  getEventById(id: string): Observable<VPEventModel> {
+    return this.get(`events/${id}`);
+  }
 }
